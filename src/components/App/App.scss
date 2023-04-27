@@ -46,8 +46,48 @@
       }
     }
   }
-  // &__bottom {
-  //   background-color: #e6e6e6;
-  //   height: 140px;
-  // }
+  &__bottom {
+    background-color: white;
+    height: 82px;
+    display: flex;
+    align-items: center;
+
+    &-menu {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      margin: auto 48px;
+      color: #35312e;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 22px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+
+      &-left,
+      &-middle,
+      &-right {
+        display: flex;
+        gap: 35px;
+      }
+    }
+
+    &-logo {
+      width: 131px;
+      height: auto;
+    }
+    &-account-icon {
+      border: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    &-text {
+      cursor: pointer;
+    }
+    &-text:hover {
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+  }
 }
