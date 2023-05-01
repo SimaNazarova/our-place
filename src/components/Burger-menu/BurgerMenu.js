@@ -1,5 +1,5 @@
 import "./BurgerMenu.scss";
-import React, { useState } from "react";
+import React from "react";
 
 import user from "../../images/user.png";
 
