@@ -23,6 +23,8 @@
     background-color: white;
     display: flex;
     align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
 
     &-menu-burger-btn {
       &-line {

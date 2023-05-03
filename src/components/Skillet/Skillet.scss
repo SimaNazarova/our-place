@@ -1,0 +1,111 @@
+.skillet {
+  background-image: url(../../images/skillet.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  &__container {
+    margin-left: 28%;
+    width: 248px;
+    margin-top: 11%;
+    margin-bottom: 11%;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    margin: 0;
+    color: #35312e;
+
+    &_small {
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase;
+      margin-bottom: 9px;
+    }
+    &_large {
+      font-size: 50px;
+      line-height: 72px;
+      letter-spacing: 1px;
+    }
+
+    &_underline {
+      font-size: 50px;
+      line-height: 72px;
+      letter-spacing: 1px;
+    }
+  }
+
+  &__underline {
+    display: block;
+    width: 138px;
+    background-color: #35312e;
+    height: 2px;
+    margin-top: -13px;
+  }
+
+  &__button {
+    opacity: 0;
+    background: #d37657;
+    width: 248px;
+    height: 60px;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffffff;
+    margin-top: 57px;
+    border: none;
+    cursor: pointer;
+  }
+}
+
+@media all and (max-width: 950px) {
+  .skillet {
+    &__container {
+      margin-left: 15%;
+      margin-top: 6%;
+    }
+  }
+}
+
+@media all and (max-width: 550px) {
+  .skillet {
+    background-image: none;
+    background-color: #f5f1e9;
+  }
+}
+
+@media all and (max-width: 300px) {
+  .skillet {
+    &__container {
+      width: 238px;
+    }
+    &__text {
+      &_small {
+        font-size: 12px;
+        margin-bottom: 9px;
+      }
+      &_large {
+        font-size: 46px;
+      }
+
+      &_underline {
+        font-size: 46px;
+      }
+    }
+
+    &__button {
+      width: 192px;
+      height: 49px;
+    }
+  }
+}

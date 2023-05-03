@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import logo from "../../images/logo.svg";
 import user from "../../images/user.png";
 
+
 function Header(props) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
