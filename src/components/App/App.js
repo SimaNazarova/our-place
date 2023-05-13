@@ -6,6 +6,7 @@ import Skillet from "../Skillet/Skillet";
 
 import MassMedia from "../Mass-Media/Mass-Media";
 import Place from "../Place/Place";
+import Design from "../Design/Design";
 
 function App() {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <Skillet />
       <MassMedia />
       <Place />
+      <Design />
     </div>
   );
 }

@@ -1,0 +1,130 @@
+.App {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  color: black;
+  overflow: auto;
+  margin: 0;
+}
+
+.design {
+  background-color: #fbf6ea;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 140px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 48px;
+    text-align: center;
+    color: #35312e;
+  }
+
+  &__colors {
+    margin-top: 36px;
+  }
+
+  &__set {
+    max-width: 706px;
+    height: 553px;
+    position: relative;
+    &-img {
+      width: 561px;
+      height: auto;
+      margin-top: 30px;
+      margin-left: 158px;
+    }
+  }
+
+  &__ul {
+    display: flex;
+    gap: 15px;
+    padding: 0;
+  }
+
+  &__li {
+    list-style-type: none;
+  }
+
+  &__circle {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+  &__li:nth-of-type(7) &__circle {
+    border: 3px solid #e09d81;
+    box-sizing: border-box;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #6e6259;
+    position: absolute;
+
+    &_1 {
+      top: 54px;
+      right: 28px;
+    }
+
+    &_2 {
+      top: 102px;
+      left: 9px;
+    }
+    &_3 {
+      top: 302px;
+      right: 15px;
+    }
+
+    &_4 {
+      top: 374px;
+      left: 107px;
+    }
+    &_5 {
+      top: 463px;
+      right: 0px;
+    }
+
+    &_6 {
+      top: 492px;
+      left: 20px;
+    }
+  }
+}
+
+@media all and (max-width: 750px) {
+  .design {
+    &__text {
+      position: unset;
+      font-size: 20px;
+      line-height: 21px;
+    }
+
+    &__set {
+      &-img {
+        display: none;
+      }
+    }
+
+    &__li:nth-of-type(7) &__circle {
+      border: none;
+    }
+  }
+}
