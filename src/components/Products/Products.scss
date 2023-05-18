@@ -1,0 +1,122 @@
+.products {
+  background-color: #fcfaf6;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 140px;
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 33px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: #35312e;
+    max-width: 477px;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #4f463f;
+    max-width: 441px;
+  }
+
+  &__ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 60px;
+    padding: 0 40px;
+  }
+
+  &__li {
+    list-style-type: none;
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #35312e;
+      margin: 0;
+      margin-top: 15px;
+    }
+    &-price {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #6e635a;
+      margin: 0;
+      margin-top: 4px;
+    }
+
+    &-info {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #6e635a;
+      max-width: 184px;
+      margin: 0;
+      margin-top: 4px;
+    }
+  }
+
+  &__img {
+    width: 286px;
+    height: auto;
+  }
+
+  &__colors {
+    &-ul {
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin-top: 29px;
+    }
+
+    &-li {
+      list-style-type: none;
+    }
+
+    &-li:nth-of-type(1) &-circle {
+      border: 3px solid #6e6259;
+      box-sizing: border-box;
+    }
+
+    &-circle {
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+@media all and (max-width: 750px) {
+  .products {
+    padding: 0 21px;
+  }
+}

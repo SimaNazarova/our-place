@@ -15,8 +15,6 @@ function Design() {
   const text_5Ref = useRef(null);
   const text_6Ref = useRef(null);
 
-
-
   useEffect(() => {
     gsap.fromTo(
       [
@@ -43,7 +41,7 @@ function Design() {
   });
   return (
     <div className="design">
-      <div className="design__title">Designed for Everything and Always</div>
+      <p className="design__title">Designed for Everything and Always</p>
       <div className="design__colors">
         <ul className="design__ul">
           {colorsArray.map((item, i) => (
