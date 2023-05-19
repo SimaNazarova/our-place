@@ -1,0 +1,90 @@
+.follow {
+  background-color: #f5f1e9;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+
+  &__block {
+    width: calc(100% / 3);
+    height: 480px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &-left {
+      background-image: url(../../images/dish.png);
+    }
+
+    &-right {
+      background-image: url(../../images/tableware.png);
+    }
+
+    &-middle {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__hashtag {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #35312e;
+  }
+
+  &__text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #35312e;
+    max-width: 450px;
+    margin: 0 15px;
+  }
+
+  &__button {
+    background: #ffffff;
+    border: 1px solid rgba(170, 160, 152, 0.29);
+    border-radius: 4px;
+    width: 206px;
+    height: 54px;
+    margin-top: 61px;
+  }
+}
+
+@media all and (max-width: 1153px) {
+  .follow {
+    &__block {
+      height: 440px;
+      &__hashtag {
+        font-size: 11px;
+      }
+
+      &__text {
+        font-size: 18px;
+      }
+
+      &__button {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 900px) {
+  .follow {
+    flex-direction: column;
+    &__block {
+      width: 100%;
+      height: 360px;
+    }
+  }
+}
