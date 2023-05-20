@@ -9,6 +9,7 @@ import Place from "../Place/Place";
 import Design from "../Design/Design";
 import Products from "../Products/Products";
 import Follow from "../Follow/Follow";
+import Footer from "../Footer/Footer";
 
 function App() {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
@@ -28,6 +29,7 @@ function App() {
       <Design />
       <Products />
       <Follow />
+      <Footer/>
     </div>
   );
 }
