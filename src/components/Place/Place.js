@@ -1,9 +1,9 @@
 import "./Place.scss";
 import React from "react";
 
-function Place() {
+function Place({ refProp }) {
   return (
-    <section className="place">
+    <section className="place" ref={refProp}>
       <div className="place__title">
         Welcome to Our
         <br /> Place

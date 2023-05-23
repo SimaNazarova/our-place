@@ -1,9 +1,9 @@
 import "./Products.scss";
 import React from "react";
 import { productsArray } from "./data";
-function Products() {
+function Products({refProp}) {
   return (
-    <div className="products">
+    <div className="products" ref={refProp}>
       <h2 className="products__title">
         From curated essentials to limited-run editions.
       </h2>

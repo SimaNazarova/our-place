@@ -39,7 +39,7 @@ function Skillet() {
   }, []);
 
   return (
-    <section className="skillet ">
+    <section className="skillet">
       <div className="skillet__container">
         <p className="skillet__text skillet__text_small" ref={text1Ref}>
           Meet The Always Pan

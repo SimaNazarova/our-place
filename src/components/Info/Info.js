@@ -4,9 +4,9 @@ import { listsArray } from "./data";
 import usaFlag from "../../images/usa-flag.png";
 import canadaFlag from "../../images/canada-flag.png";
 
-function Info() {
+function Info({refProp}) {
   return (
-    <section className="info">
+    <section className="info" ref={refProp}>
       <div className="info__left">
         <h3 className="info__left-title">Keep in touch</h3>
         <p className="info__left-text">

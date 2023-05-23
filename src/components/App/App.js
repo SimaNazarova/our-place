@@ -1,5 +1,7 @@
 import "./App.scss";
-import React, { useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import React, { useState, useRef, useEffect } from "react";
 import Header from "../Header/Header";
 import BurgerMenu from "../Burger-menu/BurgerMenu";
 import Skillet from "../Skillet/Skillet";
@@ -12,12 +14,45 @@ import Follow from "../Follow/Follow";
 import Footer from "../Footer/Footer";
 import Info from "../Info/Info";
 
+gsap.registerPlugin(ScrollTrigger);
+
 function App() {
   const [openBurgerMenu, setOpenBurgerMenu] = useState(false);
 
   function onOpenBurgerMenu() {
     setOpenBurgerMenu(!openBurgerMenu);
   }
+
+  const revealRefs = useRef([]);
+
+  revealRefs.current = [];
+
+  useEffect(() => {
+    revealRefs.current.forEach((el, index) => {
+      gsap.fromTo(
+        el,
+        { autoAlpha: 0 },
+        {
+          duration: 1,
+          autoAlpha: 1,
+          ease: "none",
+          scrollTrigger: {
+            id: `section-${index + 1}`,
+            trigger: el,
+            start: "top center+=200",
+            toggleActions: "play none none none",
+            // markers: true,
+          },
+        }
+      );
+    });
+  });
+
+  const addToRefs = (el) => {
+    if (el && !revealRefs.current.includes(el)) {
+      revealRefs.current.push(el);
+    }
+  };
 
   return (
     <div className="App">
@@ -26,11 +61,11 @@ function App() {
 
       <Skillet />
       <MassMedia />
-      <Place />
-      <Design />
-      <Products />
-      <Follow />
-      <Info />
+      <Place refProp={addToRefs} />
+      <Design refProp={addToRefs} />
+      <Products refProp={addToRefs} />
+      <Follow refProp={addToRefs} />
+      <Info refProp={addToRefs} />
       <Footer />
     </div>
   );

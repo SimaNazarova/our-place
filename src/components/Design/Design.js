@@ -7,7 +7,7 @@ import { colorsArray } from "./data";
 
 gsap.registerPlugin(ScrollTrigger);
 
-function Design() {
+function Design({ refProp }) {
   const text_1Ref = useRef(null);
   const text_2Ref = useRef(null);
   const text_3Ref = useRef(null);
@@ -40,7 +40,7 @@ function Design() {
     );
   });
   return (
-    <div className="design">
+    <div className="design" ref={refProp}>
       <p className="design__title">Designed for Everything and Always</p>
       <div className="design__colors">
         <ul className="design__ul">
