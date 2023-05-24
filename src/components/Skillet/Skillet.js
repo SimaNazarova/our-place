@@ -14,12 +14,18 @@ function Skillet() {
     tl.fromTo(
       text1Ref.current,
       { opacity: 0 },
-      { opacity: 1, duration: 1, delay: 0.9 }
+      { opacity: 1, duration: 1, delay: 0.3 }
     )
       .fromTo(
-        [text2Ref.current, text3Ref.current],
-        { opacity: 0 },
-        { opacity: 1, duration: 1.5 },
+        text2Ref.current,
+        { y: "40px", opacity: 0 },
+        { y: "0px", opacity: 1, duration: 1 },
+        "-=0.2"
+      )
+      .fromTo(
+        text3Ref.current,
+        { y: "40px", opacity: 0 },
+        { y: "0px", opacity: 1, duration: 1 },
         "-=0.2"
       )
       .fromTo(
@@ -30,8 +36,8 @@ function Skillet() {
       )
       .fromTo(
         buttonRef.current,
-        { opacity: 0 },
-        { opacity: 1, duration: 1.3 },
+        { x: "40px", opacity: 0 },
+        { x: "0px", opacity: 1, duration: 1 },
         "-=0.2"
       );
 
@@ -41,9 +47,9 @@ function Skillet() {
   return (
     <section className="skillet">
       <div className="skillet__container">
-        <p className="skillet__text skillet__text_small" ref={text1Ref}>
+        <h1 className="skillet__text skillet__text_small" ref={text1Ref}>
           Meet The Always Pan
-        </p>
+        </h1>
         <p className="skillet__text skillet__text_large" ref={text2Ref}>
           Your new
         </p>

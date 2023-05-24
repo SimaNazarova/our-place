@@ -6,10 +6,10 @@ import { logoArray } from "./data";
 function MassMedia() {
   return (
     <section className="mass-media">
-      <p className="mass-media__text">
+      <h2 className="mass-media__text">
         "Doing the job of eight traditional cookware
         <br /> pieces"
-      </p>
+      </h2>
       <ul className="mass-media__ul">
         {logoArray.map((item, i) => (
           <li key={i} className="mass-media__li">
