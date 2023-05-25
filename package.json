@@ -1,4 +1,5 @@
 {
+  "homepage": "https://simanazarova.github.io/our-place",
   "name": "movies-explorer-frontend",
   "version": "0.1.0",
   "private": true,
@@ -6,6 +7,7 @@
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^5.0.0",
     "gsap": "^3.11.5",
     "node-sass": "^8.0.0",
     "react": "^17.0.1",
@@ -21,7 +23,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "makes_all_cool": "npx prettier --write ."
+    "makes_all_cool": "npx prettier --write .",
+    "deploy": " gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
