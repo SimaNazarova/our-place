@@ -39,7 +39,8 @@ function Header(props) {
           <div className="header__bottom-menu">
             <div
               onClick={props.onOpenBurgerMenu}
-              className="header__bottom-menu-burger-btn">
+              className="header__bottom-menu-burger-btn"
+            >
               <div className="header__bottom-menu-burger-btn-line"></div>
               <div className="header__bottom-menu-burger-btn-line"></div>
               <div className="header__bottom-menu-burger-btn-line"></div>

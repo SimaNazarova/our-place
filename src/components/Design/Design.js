@@ -47,7 +47,8 @@ function Design({ refProp }) {
             <li key={i} className="design__li">
               <div
                 style={{ background: item.color }}
-                className="design__circle"></div>
+                className="design__circle"
+              ></div>
             </li>
           ))}
         </ul>

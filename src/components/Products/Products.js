@@ -1,7 +1,7 @@
 import "./Products.scss";
 import React from "react";
 import { productsArray } from "./data";
-function Products({refProp}) {
+function Products({ refProp }) {
   return (
     <div className="products" ref={refProp}>
       <h2 className="products__title">
@@ -23,7 +23,8 @@ function Products({refProp}) {
                 <li key={i} className="products__colors-li">
                   <div
                     style={{ background: item }}
-                    className="products__colors-circle"></div>
+                    className="products__colors-circle"
+                  ></div>
                 </li>
               ))}
             </ul>
