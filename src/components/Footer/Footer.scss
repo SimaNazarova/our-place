@@ -49,6 +49,7 @@
     background-image: url(../../images/wheelchair.png);
     background-repeat: no-repeat;
     background-position: center;
+    cursor: pointer;
   }
 }
 @media all and (max-width: 811px) {
@@ -71,12 +72,12 @@
 
 @media all and (max-width: 300px) {
   .footer {
-
-
     &__copyright {
       margin-top: 15px;
     }
-
   }
 }
 
+a {
+  text-decoration: none;
+}

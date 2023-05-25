@@ -65,6 +65,7 @@
       text-align: center;
       text-transform: uppercase;
       color: #4f463f;
+      cursor: pointer;
     }
   }
 
@@ -74,6 +75,11 @@
       flex-wrap: wrap;
     }
 
+    &-title {
+      color: #f5f1e9;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
     &-ul {
       padding: 0;
       margin-right: 40px;
@@ -86,14 +92,12 @@
       font-size: 16px;
       line-height: 31px;
       color: rgba(245, 241, 233, 0.6);
-    }
-    &-li:first-of-type {
-      color: #f5f1e9;
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
+      cursor: pointer;
     }
 
-
+    &-li:hover {
+      color: #4f463f;
+    }
 
     &-text {
       font-style: normal;
@@ -107,6 +111,7 @@
 
     &-flag {
       margin-right: 24px;
+      cursor: pointer;
     }
   }
 }
@@ -114,6 +119,7 @@
 @media all and (max-width: 600px) {
   .info {
     padding: 40px 60px 40px 20px;
+    gap: 20px;
   }
 }
 @media all and (max-width: 400px) {

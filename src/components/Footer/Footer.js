@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "./Footer.scss";
 import React from "react";
 
@@ -8,9 +9,18 @@ function Footer() {
       <div className="footer__info">
         <ul className="footer__info-ul">
           <li className="footer__info-li">Copyright 2021</li>
-          <li className="footer__info-li">Privacy</li>
-          <li className="footer__info-li">Terms</li>
-          <li className="footer__info-li">Return</li>
+          <a href="#">
+            {" "}
+            <li className="footer__info-li">Privacy</li>
+          </a>
+          <a href="#">
+            {" "}
+            <li className="footer__info-li">Terms</li>
+          </a>
+          <a href="#">
+            {" "}
+            <li className="footer__info-li">Return</li>
+          </a>
           <li className="footer__info-li">
             {" "}
             <button className="footer__btn"></button>

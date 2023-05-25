@@ -4,7 +4,7 @@ import { listsArray } from "./data";
 import usaFlag from "../../images/usa-flag.png";
 import canadaFlag from "../../images/canada-flag.png";
 
-function Info({refProp}) {
+function Info({ refProp }) {
   return (
     <section className="info" ref={refProp}>
       <div className="info__left">
@@ -16,20 +16,25 @@ function Info({refProp}) {
         <form className="info__left-form">
           <input
             className="info__left-input"
-            type="text"
+            type="email"
             name="email"
-            value="Your email"
+            placeholder="Your email"
           />
           <button className="info__left-btn">SUBMIT</button>
         </form>
       </div>
       <div className="info__right">
         <div className="info__right-lists">
-          {listsArray.map((list) => {
+          {listsArray.map((item, index) => {
             return (
-              <ul className="info__right-ul">
-                {list.map((item) => {
-                  return <li className="info__right-li">{item}</li>;
+              <ul key={index} className="info__right-ul">
+                <p className="info__right-title">{item.title}</p>
+                {item.list.map((item, index) => {
+                  return (
+                    <li key={index} className="info__right-li">
+                      {item}
+                    </li>
+                  );
                 })}
               </ul>
             );
