@@ -25,8 +25,5 @@
     "main.f9288da3.js.map": "/our-place/static/js/main.f9288da3.js.map",
     "787.d83cbedb.chunk.js.map": "/our-place/static/js/787.d83cbedb.chunk.js.map"
   },
-  "entrypoints": [
-    "static/css/main.5bfeafca.css",
-    "static/js/main.f9288da3.js"
-  ]
+  "entrypoints": ["static/css/main.5bfeafca.css", "static/js/main.f9288da3.js"]
 }
