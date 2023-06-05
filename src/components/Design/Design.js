@@ -40,7 +40,7 @@ function Design({ refProp }) {
   };
   return (
     <section className="design" ref={refProp}>
-     <div className="design__container">
+      <div className="design__container">
         <h2 className="design__title">Designed for Everything and Always</h2>
         <div className="design__colors">
           <ul className="design__ul">
@@ -79,7 +79,7 @@ function Design({ refProp }) {
             <br /> PFOAs & PTFEs
           </p>
         </div>
-     </div>
+      </div>
     </section>
   );
 }

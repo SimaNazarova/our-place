@@ -7,12 +7,12 @@ import canadaFlag from "../../images/canada-flag.png";
 function Info({ refProp }) {
   return (
     <section className="info" ref={refProp}>
-     <div className="info__container">
+      <div className="info__container">
         <div className="info__left">
           <h3 className="info__left-title">Keep in touch</h3>
           <p className="info__left-text">
-            Be the first to know about new collections, special events, and what’s
-            going on at Our Place.
+            Be the first to know about new collections, special events, and
+            what’s going on at Our Place.
           </p>
           <form className="info__left-form">
             <input
@@ -47,7 +47,7 @@ function Info({ refProp }) {
             <img className="info__right-flag" alt="country" src={canadaFlag} />
           </div>
         </div>
-     </div>
+      </div>
     </section>
   );
 }

@@ -24,7 +24,8 @@ function Products({ refProp }) {
                   <li key={i} className="products__colors-li">
                     <div
                       style={{ background: item }}
-                      className="products__colors-circle"></div>
+                      className="products__colors-circle"
+                    ></div>
                   </li>
                 ))}
               </ul>

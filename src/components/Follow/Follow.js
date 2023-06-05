@@ -3,7 +3,7 @@ import "./Follow.scss";
 function Follow({ refProp }) {
   return (
     <section className="follow" ref={refProp}>
-     <div className="follow__container">
+      <div className="follow__container">
         <div className="follow__block follow__block-left"></div>
         <div className="follow__block follow__block-middle">
           <p className="follow__hashtag">#DirtyDishes</p>
@@ -13,7 +13,7 @@ function Follow({ refProp }) {
           <button className="follow__button">Follow Along</button>
         </div>
         <div className="follow__block follow__block-right"></div>
-     </div>
+      </div>
     </section>
   );
 }
