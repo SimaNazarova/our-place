@@ -33,7 +33,7 @@ function App() {
         el,
         { autoAlpha: 0 },
         {
-          duration: 1,
+          duration: 0.5,
           autoAlpha: 1,
           ease: "none",
           scrollTrigger: {

@@ -1,9 +1,11 @@
 .mass-media {
-  max-width: 1440px;
-  margin: 0 auto;
   background: #f5f1e9;
-  padding-top: 40px;
-  padding-bottom: 45px;
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
 
   &__text {
     font-style: normal;

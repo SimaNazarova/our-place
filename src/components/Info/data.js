@@ -9,7 +9,7 @@ export const listsArray = [
     ],
   },
   {
-    title: "Social",
+    title: "Company",
     list: [
       "Mission",
       "FAQs",

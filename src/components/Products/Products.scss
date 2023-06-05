@@ -1,12 +1,15 @@
 .products {
   background-color: #fcfaf6;
-  max-width: 1440px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 70px;
-  padding-bottom: 140px;
+
+  &__container {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+    padding-bottom: 140px;
+  }
 
   &__title {
     font-style: normal;
@@ -115,7 +118,7 @@
   }
 }
 @media all and (max-width: 750px) {
-  .products {
+  .products__container {
     padding: 0 21px;
     padding-bottom: 30px;
   }

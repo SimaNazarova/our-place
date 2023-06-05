@@ -1,15 +1,18 @@
 .info {
-  max-width: 1440px;
-  margin: 0 auto;
   background: #6c674d;
-  display: flex;
-  justify-content: center;
-  gap: 135px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 80px 123px 80px 43px;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 80px 123px 80px 43px;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
   &__left {
     &-title {
       font-style: normal;
@@ -117,7 +120,7 @@
 }
 
 @media all and (max-width: 600px) {
-  .info {
+  .info__container {
     padding: 40px 60px 40px 20px;
     gap: 20px;
   }

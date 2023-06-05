@@ -1,14 +1,17 @@
 .footer {
-  max-width: 1440px;
-  margin: 0 auto;
   background: #807c62;
-  display: flex;
-  justify-content: center;
-  gap: 135px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 
   &__copyright {
     font-style: normal;
@@ -54,7 +57,9 @@
 }
 @media all and (max-width: 811px) {
   .footer {
-    gap: 20px;
+    &__container {
+      gap: 20px;
+    }
 
     &__copyright {
       margin-left: 40px;
